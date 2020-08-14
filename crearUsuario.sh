@@ -2,7 +2,7 @@
 #
 # Gestion de Usuarios - 
 #
-# Primer Entrega - Proyecto Sistemas Operativos III  ESI-Buceo -  Profesor Daniel García
+# Segunda Entrega - Proyecto Sistemas Operativos III  ESI-Buceo -  Profesor Daniel García
 # Autor: Andrea Bazzini, Marcos Bueno, Ruben Gainza y Mathías Torterolo.
 
 #VARIABLES 
@@ -39,7 +39,8 @@ echo "Asignar una contraseña a $user : "
 passwd $user
 
   
-cfi
+sh logsAltaUsuario.sh "- ALTA USUARIO: El administrador $admin creo  usuario $user en el sistema"
+fi
 
 sleep 3 
 
