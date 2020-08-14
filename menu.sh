@@ -60,6 +60,8 @@
 
 	echo -e "\t7)  Realizar un Buckup de BD en este momento"
 
+	echo -e "\t8)  Menu LOG"
+
 	echo -e "\tQ)  Salir"
 
 	echo ""
@@ -102,12 +104,17 @@
 			#Redirecciona al bash de Crear grupos
 			./listarUsuarios.sh
 					;;
-			  7)
+			7)
             
 			#Redirecciona al bash backup DB
 			./backupDBmySQL.sh
 					;;
 
+			8)
+            
+			#Redirecciona al bash menulogs
+			./menuLogs.sh
+					;;
 
 
 			q|Q) exit     ;;
