@@ -39,8 +39,7 @@ echo "Asignar una contraseña a $user : "
 passwd $user
 
   
-sh logsAltaUsuario.sh "- ALTA USUARIO: El administrador $admin creo  usuario $user en el sistema"
-fi
+cfi
 
 sleep 3 
 

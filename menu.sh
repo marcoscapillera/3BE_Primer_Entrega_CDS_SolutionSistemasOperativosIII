@@ -71,34 +71,34 @@
 	case "$OP" in
 
 			1)
-            sh logs.sh "Alta de Usuario"
+            
 			#Redirecciona al bash de ver de Usuario
 			./crearUsuario.sh
 					;;
 
 			2)
-            sh logs.sh "Baja de Usuario"
+            
 			#Redirecciona al bash de crear Usuario
 			./borrarUsuario.sh
 					;;
 			3)
-            sh logs.sh "Menu modificiacion de Usuario"
+            
 			#Redirecciona al bash de borrar usuario
 			./menuModificacionUsuario.sh
 					;;
 
 			4)
-            sh logs.sh "Menu Administrar Grupos"
+            
 			#Redirecciona al bash de modificar usuario
 			./menuAdministrarGrupos.sh
 					;;
             5)
-            sh logs.sh "Listar Grupos"
+           
 			#Redirecciona al bash de ver grupos
 			./verGrupos.sh
 					;;
             6)
-            sh logs.sh "Listar Usuarios"
+            
 			#Redirecciona al bash de Crear grupos
 			./listarUsuarios.sh
 					;;
