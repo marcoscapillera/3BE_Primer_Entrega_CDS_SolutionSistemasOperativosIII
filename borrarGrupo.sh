@@ -21,6 +21,8 @@ if grep -qiw $grupo /etc/group; then
 
 echo "Grupo existe"
 groupdel $grupo
+echo "en proceso..."
+sleep 3
 echo -e "Se borro grupo $grupo correctamente"
 echo "El administrador $admin borro al grupo $grupo,  el $DIA a las $HORA">> historial.txt
 

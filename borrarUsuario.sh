@@ -21,7 +21,7 @@ read user
 if grep -qiw $user /etc/passwd; then
 
 sudo userdel -r $user
-echo "..."
+echo "En proceso..."
 sleep 3
 
 echo -e "Se borro usuario correctamente"
