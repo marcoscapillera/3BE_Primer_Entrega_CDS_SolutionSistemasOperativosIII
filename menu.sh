@@ -60,7 +60,9 @@
 
 	echo -e "\t7)  Realizar un Buckup de BD en este momento"
 
-	echo -e "\t8)  Menu LOG"
+	echo -e "\t8)  Realizar un Buckup de una tabla en este momento"
+
+	echo -e "\t9)  Menu LOG"
 
 	echo -e "\tQ)  Salir"
 
@@ -111,6 +113,12 @@
 					;;
 
 			8)
+            
+			#Redirecciona al bash menulogs
+			./backupTxt.sh
+					;;
+			
+			9)
             
 			#Redirecciona al bash menulogs
 			./menuLogs.sh
