@@ -10,7 +10,7 @@
 
 #EJECUCION
 clear
-echo -e "----------------LOG DE BAJA DE USUARIOS---------------------------"
+echo -e "----------------LOG MODIFICACIONES DE USUARIOS---------------------------"
 echo ""
 echo ""
 

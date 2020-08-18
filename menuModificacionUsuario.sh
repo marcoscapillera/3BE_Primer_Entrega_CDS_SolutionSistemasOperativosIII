@@ -8,113 +8,99 @@
 ## ------------------------------- VARIABLES -------------------------------- #
 
 
-	ARCHIVO_LISTA_DE_SERVICIOS="litaDeUsuarios.txt"
-	ALTA="altaUsuario.sh"
+ARCHIVO_LISTA_DE_SERVICIOS="litaDeUsuarios.txt"
+ALTA="altaUsuario.sh"
 
-	DIA=`date +"%d/%m/%Y"`
-	HORA=`date +"%H:%M"`
+DIA=`date +"%d/%m/%Y"`
+HORA=`date +"%H:%M"`
 
-	SEP=":"
+SEP=":"
 
-    # ---------------------------VALIDACIONES --------------------------------- #
+# ---------------------------VALIDACIONES --------------------------------- #
 	
 
-    if [ $(whoami) != "root" ]; then #Comando whoami, usuario actual que esta logueado en el sistema e inicio el bash
-		echo "Tienes que ser root para ejecutar este script"
-		echo "Ejecuta "sudo su" usuario y contraseñra para ser root"
-		exit 1
-    fi
+if [ $(whoami) != "root" ]; then #Comando whoami, usuario actual que esta logueado en el sistema e inicio el bash
+echo "Tienes que ser root para ejecutar este script"
+echo "Ejecuta "sudo su" usuario y contraseñra para ser root"
+exit 1
+fi
 
-	#CAMBIA LOS PERMISOS A TODOS LOS BASH PARA PODER EDITAR, EJECUTAR, LEER.
-	find . -type f -exec chmod 777 {} \;
+#CAMBIA LOS PERMISOS A TODOS LOS BASH PARA PODER EDITAR, EJECUTAR, LEER.
+find . -type f -exec chmod 777 {} \;
 
-    if [ ! -e "$HISTORIAL" ]; then
+if [ ! -e "$HISTORIAL" ]; then
 
-    	touch historial.txt
+touch historial.txt
 
-    fi
+fi
 
-    
 #MENU--------------------------------------------------------------------------- #
 
-    clear
+clear
 
-    echo ""
+echo ""
 
-	echo -e "         ------------Menu modificacion de Usuario -----------------------------------------------------"
+echo -e "         ------------Menu modificacion de Usuario -----------------------------------------------------"
 
-	echo ""
+echo ""
 
-    echo -e "\t1)  Cambiar nombre"
+echo -e "\t1)  Cambiar nombre"
 
-	echo -e "\t2)  Cambiar contraseña"
+echo -e "\t2)  Cambiar contraseña"
 
-    echo -e "\t3)  Agregar a un grupo principal"
+echo -e "\t3)  Agregar a un grupo principal"
 
-	echo -e "\t4)  Agregar a un grupo secundario"
+echo -e "\t4)  Agregar a un grupo secundario"
 
-    echo -e "\t5)  Ver Usuario"
+echo -e "\t5)  Ver Usuario"
 
-    echo -e "\t6)  Volver al menu principal"
+echo -e "\t6)  Volver al menu principal"
 
-	echo -e "\tQ)  Salir"
+echo -e "\tQ)  Salir"
 
-	echo ""
+echo ""
 
-	echo -e "\t Digite una opcion: "
+echo -e "\t Digite una opcion: "
 
-	read OP
+read OP
 
-	case "$OP" in
+case "$OP" in
 
-			1)
-            sh logs.sh "Cambiar nombre"
-			#Redirecciona al bash de ver de Usuario
-			./modificarUsuario.sh
-					;;
+1)
+sh logs.sh "Cambiar nombre"
+#Redirecciona al bash de ver de Usuario
+./modificarUsuario.sh;;
 
-			2)
-            sh logs.sh "Cambiar contraseña"
-			#Redirecciona al bash de crear Usuario
-			./cambiarPass.sh
-					;;
-			3)
-            sh logs.sh "Agregar a un grupo principal"
-			#Redirecciona al bash de borrar usuario
-			./agregarUserAGrupoPrinicipal.sh
-					;;
+2)
+sh logs.sh "Cambiar contraseña"
+#Redirecciona al bash de crear Usuario
+./cambiarPass.sh;;
+3)
+sh logs.sh "Agregar a un grupo principal"
+#Redirecciona al bash de borrar usuario
+./agregarUserAGrupoPrinicipal.sh;;
 
-			4)
-            sh logs.sh "Agregar a un grupo secundario"
-			#Redirecciona al bash de modificar usuario
-			./agregarUserAGrupoSecundario.sh
-					;;
+4)
+sh logs.sh "Agregar a un grupo secundario"
+#Redirecciona al bash de modificar usuario
+./agregarUserAGrupoSecundario.sh;;
 
+5)
+sh logs.sh "Ver Usuario"
+#Redirecciona al bash de modificar usuario
+./verUsuario.sh;;
 
-             5)
-            sh logs.sh "Ver Usuario"
-			#Redirecciona al bash de modificar usuario
-			./verUsuario.sh
-                    ;;
+6)
+sh logs.sh "Volver al menu principal"
+#Redirecciona al bash de modificar usuario
+./menu.sh;;
+q|Q) exit;;
 
-            6)
-            sh logs.sh "Volver al menu principal"
-			#Redirecciona al bash de modificar usuario
-			./menu.sh
-					;;
- 
- 
+*) echo -e "\t Opcion inválida!"
 
+./menu.sh
 
-
-			q|Q) exit     ;;
-
-			*) echo -e "\t Opcion inválida!"
-
-			
-			./menu.sh
-
-	esac
+esac
 
 
     

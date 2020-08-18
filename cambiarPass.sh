@@ -27,6 +27,5 @@ echo "El administrador $admin cambio la contraseña  del usuario $user,  el $DIA
 fi
 
 read -p "Press enter para volver al menu" 
-
 ./menu.sh
 #FIN BASH

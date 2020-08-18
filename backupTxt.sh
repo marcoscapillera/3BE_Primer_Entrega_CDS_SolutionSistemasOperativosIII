@@ -5,6 +5,7 @@ user="root"
 password="admin"
 host="localhost"
 db_name="dbTriage"
+date=$(date +"%d-%b-%Y")
 tabla=""
 
 
@@ -22,7 +23,7 @@ sleep 3
 
 # Backup database dentro de archivo txt
 
-mysql -u root -h localhost -p -e "select * from dbTriage.$tabla;" >  "/tmp/backup$date.txt"
+mysql -u root -h localhost -p -e "select * from dbTriage.$tabla;" >  "/home/$USER/backupFormatoTexto$db_name$date.txt" && echo "Listo!" && echo "Se guardo en home/$USER"
 sleep 3
 sh logsBackup.sh "- BUCKUP DB: el $who realizo un backup de la tabla $tabla $db_name."
 echo "Listo!"
