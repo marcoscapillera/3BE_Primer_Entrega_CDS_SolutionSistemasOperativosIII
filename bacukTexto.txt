@@ -1,2 +1,0 @@
-docidentidad	mail	nombres	apellidos	calle	numero	barrio	esquina	apartamento	fechaNacimiento	activo	fechaRegistro
-11111111	nulla.magna.malesuada@a.com	Aidan	Collins	NULL	NULL	NULL	NULL	NULL	2020-10-26	1	2020-08-14 21:27:10

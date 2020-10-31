@@ -3,7 +3,7 @@
 #
 # Gestion de Usuarios - 
 #
-# Segunda Entrega - Proyecto Sistemas Operativos III  ESI-Buceo -  Profesor Daniel García
+# Tercer Entrega - Proyecto Sistemas Operativos III  ESI-Buceo -  Profesor Daniel García
 # Autor: Andrea Bazzini, Marcos Bueno, Ruben Gainza y Mathías Torterolo.
 
 ## ------------------------------- VARIABLES -------------------------------- #
@@ -42,27 +42,20 @@
 
     echo ""
 
-	echo -e "         ------------Gestion de Usuarios Linux -----------------------------------------------------"
-
+	echo -e "#########################################################"
+	echo -e "#                                                       #"
+	echo -e "#                Hospital Vida Sana                     #"
+	echo -e "#           Admin Sys v 1.0 by CDS Solutions            #"
+	echo -e "#                                                       #"
+	echo -e "#########################################################"
 	echo ""
+	echo "****Menu Principal****"
+	echo ""
+    echo -e "\t1)  ABM Usuarios"
 
-    echo -e "\t1)  Alta de usuario"
+	echo -e "\t2)  Politica de Respaldos"
 
-	echo -e "\t2)  Baja de usuario"
-
-    echo -e "\t3)  Menu modificiacion de Usuario"
-
-	echo -e "\t4)  Menu Administrar Grupos"
-
-	echo -e "\t5)  Listar Grupos"
-
-	echo -e "\t6)  Listar Usuarios"
-
-	echo -e "\t7)  Realizar un Buckup de BD en este momento"
-
-	echo -e "\t8)  Realizar un Buckup de una tabla en este momento"
-
-	echo -e "\t9)  Menu LOG"
+    echo -e "\t3)  Procesos"
 
 	echo -e "\tQ)  Salir"
 
@@ -77,53 +70,19 @@
 			1)
             
 			#Redirecciona al bash de ver de Usuario
-			./crearUsuario.sh
+			./menuABM.sh
 					;;
 
 			2)
             
 			#Redirecciona al bash de crear Usuario
-			./borrarUsuario.sh
+			./menuRespaldo.sh
 					;;
 			3)
             
 			#Redirecciona al bash de borrar usuario
-			./menuModificacionUsuario.sh
+			./menuProcesos.sh
 					;;
-
-			4)
-            
-			#Redirecciona al bash de modificar usuario
-			./menuAdministrarGrupos.sh
-					;;
-            5)
-           
-			#Redirecciona al bash de ver grupos
-			./verGrupos.sh
-					;;
-            6)
-            
-			#Redirecciona al bash de Crear grupos
-			./listarUsuarios.sh
-					;;
-			7)
-            
-			#Redirecciona al bash backup DB
-			./backupDBmySQL.sh
-					;;
-
-			8)
-            
-			#Redirecciona al bash menulogs
-			./backupTxt.sh
-					;;
-			
-			9)
-            
-			#Redirecciona al bash menulogs
-			./menuLogs.sh
-					;;
-
 
 			q|Q) exit     ;;
 
