@@ -18,4 +18,3 @@ echo ""
 cat /var/log/altaUsuario.log && exit 1
 
 
-./menu.sh

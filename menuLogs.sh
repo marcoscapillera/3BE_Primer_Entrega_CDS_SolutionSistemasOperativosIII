@@ -57,7 +57,7 @@ case "$OP" in
 4)
             
 #Redirecciona al bash de modificar usuario
-./verLogBdb.sh
+./verLogBackup.sh
 ;;
 
 

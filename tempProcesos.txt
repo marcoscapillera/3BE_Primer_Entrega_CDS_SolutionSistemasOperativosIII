@@ -13,7 +13,6 @@
    15 ?        00:00:00 cpuhp/1
    16 ?        00:00:00 migration/1
    17 ?        00:00:00 ksoftirqd/1
-   18 ?        00:00:00 kworker/1:0-events
    19 ?        00:00:00 kworker/1:0H-kblockd
    20 ?        00:00:00 cpuhp/2
    21 ?        00:00:00 migration/2
@@ -36,311 +35,280 @@
    40 ?        00:00:00 kintegrityd
    41 ?        00:00:00 kblockd
    42 ?        00:00:00 edac-poller
-   43 ?        00:00:00 devfreq_wq
+   44 ?        00:00:00 devfreq_wq
    45 ?        00:00:00 watchdogd
    49 ?        00:00:00 kswapd0
    67 ?        00:00:00 kthrotld
    68 ?        00:00:00 ipv6_addrconf
-   79 ?        00:00:00 kstrp
-  124 ?        00:00:00 acpi_thermal_pm
-  132 ?        00:00:00 ata_sff
-  141 ?        00:00:00 scsi_eh_0
-  142 ?        00:00:00 scsi_tmf_0
-  144 ?        00:00:00 scsi_eh_1
-  145 ?        00:00:00 scsi_tmf_1
-  146 ?        00:00:00 scsi_eh_2
-  147 ?        00:00:00 scsi_tmf_2
-  148 ?        00:00:00 scsi_eh_3
-  149 ?        00:00:00 scsi_tmf_3
-  150 ?        00:00:00 scsi_eh_4
-  151 ?        00:00:00 scsi_tmf_4
-  152 ?        00:00:00 scsi_eh_5
-  153 ?        00:00:00 scsi_tmf_5
-  158 ?        00:00:01 kworker/u16:6-events_unbound
-  201 ?        00:00:00 kworker/u17:0-rb_allocator
-  202 ?        00:00:01 i915/signal:0
-  203 ?        00:00:00 i915/signal:1
-  204 ?        00:00:00 i915/signal:2
-  205 ?        00:00:00 i915/signal:6
-  238 ?        00:00:00 kworker/0:1H-kblockd
-  273 ?        00:00:00 kdmflush
-  328 ?        00:00:00 kworker/3:1H-kblockd
-  354 ?        00:00:00 kworker/1:1H-kblockd
-  410 ?        00:00:00 kworker/2:1H-xfs-log/dm-1
-  432 ?        00:00:00 xfsalloc
-  435 ?        00:00:00 xfs_mru_cache
-  438 ?        00:00:00 xfs-buf/dm-0
+   78 ?        00:00:00 kstrp
+  123 ?        00:00:00 acpi_thermal_pm
+  128 ?        00:00:00 ata_sff
+  138 ?        00:00:00 scsi_eh_0
+  140 ?        00:00:00 scsi_tmf_0
+  142 ?        00:00:00 scsi_eh_1
+  143 ?        00:00:00 scsi_tmf_1
+  153 ?        00:00:00 scsi_eh_2
+  154 ?        00:00:00 scsi_tmf_2
+  155 ?        00:00:00 scsi_eh_3
+  156 ?        00:00:00 scsi_tmf_3
+  157 ?        00:00:00 scsi_eh_4
+  158 ?        00:00:00 scsi_tmf_4
+  159 ?        00:00:00 scsi_eh_5
+  160 ?        00:00:00 scsi_tmf_5
+  198 ?        00:00:00 kworker/u17:0-rb_allocator
+  199 ?        00:00:01 i915/signal:0
+  200 ?        00:00:00 i915/signal:1
+  201 ?        00:00:00 i915/signal:2
+  202 ?        00:00:00 i915/signal:6
+  237 ?        00:00:00 kworker/0:1H-kblockd
+  257 ?        00:00:00 kworker/2:1H-xfs-log/dm-1
+  272 ?        00:00:00 kdmflush
+  433 ?        00:00:00 xfsalloc
+  434 ?        00:00:00 xfs_mru_cache
+  436 ?        00:00:00 xfs-buf/dm-0
   439 ?        00:00:00 xfs-data/dm-0
-  441 ?        00:00:00 xfs-conv/dm-0
-  442 ?        00:00:00 xfs-cil/dm-0
+  440 ?        00:00:00 xfs-conv/dm-0
+  441 ?        00:00:00 xfs-cil/dm-0
   443 ?        00:00:00 xfs-reclaim/dm-
   444 ?        00:00:00 xfs-log/dm-0
   445 ?        00:00:00 xfs-eofblocks/d
-  446 ?        00:00:01 xfsaild/dm-0
+  447 ?        00:00:01 xfsaild/dm-0
+  448 ?        00:00:00 kworker/3:1H-kblockd
+  462 ?        00:00:00 kworker/1:1H-kblockd
   494 ?        00:00:01 systemd-journal
-  513 ?        00:00:00 cfg80211
-  542 ?        00:00:00 loop0
-  561 ?        00:00:00 loop1
-  569 ?        00:00:00 systemd-udevd
-  570 ?        00:00:00 loop2
-  571 ?        00:00:00 loop3
-  572 ?        00:00:00 loop4
-  573 ?        00:00:00 loop5
-  597 ?        00:00:00 loop6
-  598 ?        00:00:00 loop7
-  607 ?        00:00:00 loop8
-  620 ?        00:00:00 loop9
-  621 ?        00:00:00 loop10
-  631 ?        00:00:00 kmemstick
-  638 ?        00:00:00 loop11
-  643 ?        00:00:04 irq/29-iwlwifi
-  648 ?        00:00:00 loop12
-  651 ?        00:00:00 irq/30-mei_me
-  676 ?        00:00:00 loop13
-  688 ?        00:00:00 loop14
-  694 ?        00:00:00 loop15
-  705 ?        00:00:00 loop16
-  717 ?        00:00:00 loop17
-  720 ?        00:00:00 loop18
-  758 ?        00:00:00 loop19
-  761 ?        00:00:00 loop20
-  769 ?        00:00:00 loop21
-  795 ?        00:00:00 loop22
-  798 ?        00:00:00 loop23
-  804 ?        00:00:00 loop24
-  830 ?        00:00:00 kworker/u17:2-rb_allocator
-  848 ?        00:00:00 kdmflush
-  849 ?        00:00:00 kdmflush
-  858 ?        00:00:00 xfs-buf/dm-1
-  859 ?        00:00:00 xfs-data/dm-1
-  860 ?        00:00:00 xfs-conv/dm-1
-  861 ?        00:00:00 xfs-cil/dm-1
-  862 ?        00:00:00 xfs-reclaim/dm-
-  863 ?        00:00:00 xfs-log/dm-1
-  864 ?        00:00:00 xfs-eofblocks/d
-  865 ?        00:00:00 xfsaild/dm-1
-  881 ?        00:00:00 systemd-timesyn
-  919 ?        00:00:01 haveged
-  922 ?        00:00:00 dundee
-  924 ?        00:00:00 ModemManager
-  926 ?        00:00:00 systemd-logind
-  927 ?        00:00:00 bluetoothd
-  930 ?        00:00:05 iio-sensor-prox
-  932 ?        00:00:00 ofonod
-  933 ?        00:00:00 alsactl
-  936 ?        00:00:00 accounts-daemon
-  937 ?        00:00:00 avahi-daemon
-  939 ?        00:00:00 cron
-  941 ?        00:00:00 rsyslogd
-  942 ?        00:00:00 udisksd
-  943 ?        00:00:01 dbus-daemon
-  944 ?        00:00:00 NetworkManager
-  945 ?        00:00:00 connmand
-  946 ?        00:00:00 wpa_supplicant
-  955 ?        00:00:01 snapd
-  961 ?        00:00:00 avahi-daemon
-  984 ?        00:00:00 iprt-VBoxWQueue
-  988 ?        00:00:00 iprt-VBoxTscThr
-  999 ?        00:00:00 polkitd
- 1030 ?        00:00:00 krfcommd
- 1179 ?        00:00:00 unattended-upgr
- 1198 ?        00:00:00 gdm3
- 1202 ?        00:00:00 sshd
- 1257 ?        00:00:00 postgres
- 1263 ?        00:00:03 mysqld
- 1264 ?        00:00:00 postgres
- 1294 ?        00:00:00 postgres
- 1299 ?        00:00:00 postgres
- 1300 ?        00:00:00 postgres
+  516 ?        00:00:00 cfg80211
+  526 ?        00:00:00 systemd-udevd
+  550 ?        00:00:00 loop0
+  570 ?        00:00:00 loop1
+  574 ?        00:00:00 loop2
+  576 ?        00:00:00 loop3
+  577 ?        00:00:00 loop4
+  607 ?        00:00:01 kworker/1:2-events
+  608 ?        00:00:00 loop5
+  623 ?        00:00:00 loop6
+  624 ?        00:00:00 loop7
+  638 ?        00:00:00 kmemstick
+  639 ?        00:00:00 loop8
+  640 ?        00:00:00 loop9
+  645 ?        00:00:00 irq/29-mei_me
+  658 ?        00:00:05 irq/30-iwlwifi
+  662 ?        00:00:00 loop10
+  674 ?        00:00:00 loop11
+  715 ?        00:00:00 loop12
+  729 ?        00:00:00 loop13
+  734 ?        00:00:00 loop14
+  749 ?        00:00:00 loop15
+  767 ?        00:00:00 loop16
+  789 ?        00:00:00 loop17
+  796 ?        00:00:00 loop18
+  807 ?        00:00:00 loop19
+  809 ?        00:00:00 loop20
+  810 ?        00:00:00 loop21
+  824 ?        00:00:00 loop22
+  830 ?        00:00:00 loop23
+  833 ?        00:00:00 loop24
+  851 ?        00:00:00 kworker/u17:2-rb_allocator
+  856 ?        00:00:00 kdmflush
+  857 ?        00:00:00 kdmflush
+  866 ?        00:00:00 xfs-buf/dm-1
+  867 ?        00:00:00 xfs-data/dm-1
+  868 ?        00:00:00 xfs-conv/dm-1
+  869 ?        00:00:00 xfs-cil/dm-1
+  870 ?        00:00:00 xfs-reclaim/dm-
+  871 ?        00:00:00 xfs-log/dm-1
+  872 ?        00:00:00 xfs-eofblocks/d
+  873 ?        00:00:01 xfsaild/dm-1
+  889 ?        00:00:00 systemd-timesyn
+  927 ?        00:00:02 haveged
+  933 ?        00:00:00 ofonod
+  934 ?        00:00:00 alsactl
+  935 ?        00:00:00 ModemManager
+  936 ?        00:00:00 rsyslogd
+  937 ?        00:00:00 accounts-daemon
+  938 ?        00:00:01 snapd
+  941 ?        00:00:00 udisksd
+  947 ?        00:00:07 iio-sensor-prox
+  948 ?        00:00:00 bluetoothd
+  949 ?        00:00:00 dundee
+  950 ?        00:00:01 dbus-daemon
+  951 ?        00:00:00 wpa_supplicant
+  952 ?        00:00:01 NetworkManager
+  953 ?        00:00:00 connmand
+  956 ?        00:00:00 avahi-daemon
+  957 ?        00:00:00 systemd-logind
+  958 ?        00:00:00 cron
+  978 ?        00:00:00 avahi-daemon
+  995 ?        00:00:00 iprt-VBoxWQueue
+ 1003 ?        00:00:00 iprt-VBoxTscThr
+ 1008 ?        00:00:00 polkitd
+ 1026 ?        00:00:00 krfcommd
+ 1193 ?        00:00:00 unattended-upgr
+ 1209 ?        00:00:00 gdm3
+ 1214 ?        00:00:00 sshd
+ 1262 ?        00:00:00 postgres
+ 1268 ?        00:00:03 mysqld
+ 1272 ?        00:00:00 postgres
+ 1293 ?        00:00:00 postgres
  1301 ?        00:00:00 postgres
  1302 ?        00:00:00 postgres
  1303 ?        00:00:00 postgres
- 1345 ?        00:00:00 postgres
- 1346 ?        00:00:00 postgres
- 1347 ?        00:00:00 postgres
+ 1304 ?        00:00:00 postgres
+ 1305 ?        00:00:00 postgres
  1348 ?        00:00:00 postgres
  1349 ?        00:00:00 postgres
  1350 ?        00:00:00 postgres
- 1403 ?        00:00:00 rtkit-daemon
- 1442 ?        00:00:00 upowerd
- 1571 ?        00:00:00 colord
+ 1351 ?        00:00:00 postgres
+ 1353 ?        00:00:00 postgres
+ 1354 ?        00:00:00 postgres
+ 1398 ?        00:00:00 dhclient
+ 1544 ?        00:00:00 rtkit-daemon
+ 1588 ?        00:00:00 apache2
+ 1589 ?        00:00:00 apache2
  1590 ?        00:00:00 apache2
- 1592 ?        00:00:00 apache2
- 1593 ?        00:00:00 apache2
- 1594 ?        00:00:00 apache2
- 1697 ?        00:00:00 gdm-session-wor
- 1702 ?        00:00:00 systemd
- 1703 ?        00:00:00 (sd-pam)
- 1719 ?        00:00:00 gnome-keyring-d
- 1723 tty2     00:00:00 gdm-x-session
- 1725 tty2     00:01:41 Xorg
- 1733 ?        00:00:01 dbus-daemon
- 1735 tty2     00:00:00 gnome-session-b
- 1813 ?        00:00:00 ssh-agent
- 1830 ?        00:00:06 ibus-daemon
- 1836 ?        00:00:00 gvfsd
- 1843 ?        00:00:00 at-spi-bus-laun
- 1844 ?        00:00:00 gvfsd-fuse
- 1846 ?        00:00:00 ibus-dconf
- 1848 ?        00:00:00 ibus-ui-gtk3
- 1853 ?        00:00:01 ibus-extension-
- 1855 ?        00:00:00 ibus-x11
- 1860 ?        00:00:00 ibus-portal
- 1869 ?        00:00:00 dbus-daemon
- 1880 ?        00:00:00 at-spi2-registr
- 1889 ?        00:00:00 xdg-desktop-por
- 1895 ?        00:00:00 xdg-document-po
- 1900 ?        00:00:00 xdg-permission-
- 1911 ?        00:00:00 xdg-desktop-por
- 1923 ?        00:00:01 ibus-engine-sim
- 1928 tty2     00:02:25 gnome-shell
- 1945 ?        00:00:44 pulseaudio
- 1958 ?        00:00:00 gnome-shell-cal
- 1964 ?        00:00:00 evolution-sourc
- 1970 ?        00:00:00 goa-daemon
- 1975 ?        00:00:00 gvfs-udisks2-vo
- 1981 ?        00:00:00 gvfs-mtp-volume
- 1985 ?        00:00:00 gvfs-gphoto2-vo
- 1989 ?        00:00:00 gvfs-goa-volume
- 1998 ?        00:00:00 goa-identity-se
- 2003 ?        00:00:00 gvfs-afc-volume
- 2008 tty2     00:00:00 gsd-power
- 2010 tty2     00:00:00 gsd-print-notif
- 2011 tty2     00:00:00 gsd-rfkill
- 2012 tty2     00:00:00 gsd-screensaver
- 2015 tty2     00:00:00 gsd-sharing
- 2020 tty2     00:00:00 gsd-sound
- 2022 tty2     00:00:00 gsd-xsettings
- 2025 tty2     00:00:00 gsd-wacom
- 2030 tty2     00:00:00 gsd-smartcard
- 2042 tty2     00:00:00 gsd-a11y-settin
- 2043 tty2     00:00:00 gsd-clipboard
- 2045 tty2     00:00:00 gsd-color
- 2050 tty2     00:00:00 gsd-datetime
- 2052 tty2     00:00:00 gsd-housekeepin
- 2054 tty2     00:00:00 gsd-keyboard
- 2060 tty2     00:00:00 gsd-media-keys
- 2061 tty2     00:00:00 gsd-mouse
- 2082 tty2     00:00:00 gsd-printer
- 2104 tty2     00:00:06 zeitgeist-datah
- 2105 tty2     00:00:00 blueman-applet
- 2106 tty2     00:00:13 plank
- 2107 tty2     00:00:00 gsd-disk-utilit
- 2108 tty2     00:00:00 evolution-alarm
- 2110 tty2     00:00:00 tracker-miner-a
- 2111 tty2     00:00:25 tracker-miner-f
- 2121 tty2     00:00:05 gnome-software
- 2137 ?        00:00:06 tracker-store
- 2163 ?        00:00:00 zeitgeist-daemo
- 2173 ?        00:00:00 zeitgeist-fts
- 2203 ?        00:00:01 dconf-service
- 2219 ?        00:00:00 evolution-calen
- 2232 ?        00:00:01 bamfdaemon
- 2258 ?        00:00:00 evolution-addre
- 2305 ?        00:00:00 obexd
- 2309 ?        00:00:00 fwupd
- 2558 ?        00:00:01 kworker/u16:1-events_unbound
- 2566 tty2     00:01:44 chrome
- 2573 tty2     00:00:00 cat
- 2574 tty2     00:00:00 cat
- 2577 tty2     00:00:00 chrome
- 2578 tty2     00:00:00 chrome-sandbox
- 2579 tty2     00:00:00 chrome
- 2581 tty2     00:00:00 chrome-sandbox
- 2582 tty2     00:00:00 nacl_helper
- 2584 tty2     00:00:00 chrome
- 2604 tty2     00:03:31 chrome
- 2610 tty2     00:00:40 chrome
- 2631 tty2     00:00:01 chrome
- 2707 tty2     00:00:04 chrome
- 2716 tty2     00:00:00 chrome
- 2725 tty2     00:00:16 chrome
- 2733 tty2     00:00:00 chrome
- 2772 tty2     00:00:00 chrome
- 2780 tty2     00:00:00 chrome
- 2794 tty2     00:00:01 chrome
- 2831 tty2     00:00:00 chrome
- 2844 tty2     00:00:00 chrome-gnome-sh
- 2909 ?        00:00:42 nautilus
- 2915 ?        00:00:00 gvfsd-trash
- 2931 ?        00:00:00 gvfsd-metadata
- 2944 ?        00:00:00 gvfsd-burn
- 2979 ?        00:00:00 dhclient
- 3122 tty2     00:00:28 chrome
- 3142 ?        00:00:00 sh
- 3155 ?        00:00:00 run-parts
- 3189 ?        00:00:00 run-parts
- 3209 ?        00:00:00 avahi-daemon-ch
- 3221 ?        00:00:00 host
- 3255 tty2     00:00:00 chrome
- 3302 tty2     00:00:00 chrome
- 3353 tty2     00:00:03 chrome
- 3370 tty2     00:00:02 chrome
- 3451 tty2     00:00:01 chrome
- 4748 tty2     00:05:34 chrome
- 4881 tty2     00:00:13 chrome
- 5079 ?        00:00:08 gnome-terminal-
- 5538 tty2     00:00:48 chrome
- 5571 ?        00:00:00 kworker/u16:0-events_unbound
- 5902 tty2     00:00:00 chrome
- 6085 ?        00:00:00 kworker/0:1-xfs-cil/dm-1
- 6515 ?        00:00:00 seahorse
- 6520 ?        00:00:00 epiphany-search
- 6570 ?        00:00:00 mission-control
- 6676 ?        00:00:09 code
- 6678 ?        00:00:00 code
- 6679 ?        00:00:00 code
- 6715 ?        00:00:00 code
- 6716 ?        00:00:06 code
- 6733 ?        00:00:33 code
- 6765 ?        00:00:04 code
- 6781 ?        00:00:02 code
- 6795 ?        00:00:01 code
- 6817 ?        00:00:00 code
- 6844 ?        00:00:00 sh
- 6845 ?        00:00:08 dart
- 6874 ?        00:00:00 gvfsd-network
- 6940 ?        00:00:00 gvfsd-dnssd
- 6970 pts/1    00:00:00 bash
- 6975 pts/1    00:00:00 su
- 6979 pts/1    00:00:00 bash
- 9796 ?        00:00:00 kworker/1:1-events
- 9821 ?        00:00:00 kworker/3:2-xfs-cil/dm-0
- 9928 tty2     00:00:00 dbeaver
- 9951 tty2     00:01:00 java
- 9996 ?        00:00:00 nm-dhcp-helper
-10074 ?        00:00:00 kworker/2:2-events_power_efficient
-10538 ?        00:00:00 kworker/3:1-xfs-cil/dm-0
-11332 ?        00:00:00 kworker/0:0-xfs-sync/dm-1
-11333 ?        00:00:00 kworker/2:1-xfs-buf/dm-1
-13290 ?        00:00:00 kworker/3:0-events
-14609 pts/1    00:00:00 bash
-14788 pts/1    00:00:00 bash
-14969 pts/1    00:00:00 bash
-15174 ?        00:00:00 gnome-control-c
-15177 ?        00:00:00 gnome-documents
-15186 ?        00:00:00 org.gnome.Chara
-15189 ?        00:00:00 gnome-calendar
-15227 ?        00:00:00 telepathy-logge
-15239 tty2     00:00:02 opera
-15244 tty2     00:00:00 opera
-15245 tty2     00:00:00 opera_sandbox
-15246 tty2     00:00:00 opera
-15248 tty2     00:00:00 opera
-15266 tty2     00:00:00 opera
-15274 tty2     00:00:00 opera
-15322 tty2     00:00:00 opera
-15326 tty2     00:00:00 opera
-15339 tty2     00:00:00 opera
-15370 tty2     00:00:00 opera
-15402 tty2     00:00:00 opera
-15410 tty2     00:00:00 opera
-15449 tty2     00:00:00 opera
-15469 tty2     00:00:00 opera
-15512 tty2     00:00:00 opera
-15519 tty2     00:00:00 opera
-15536 ?        00:00:00 kworker/1:2
-15623 tty2     00:00:00 opera_autoupdat
-15652 pts/1    00:00:00 bash
-15832 ?        00:00:00 kworker/0:2-events
-15839 pts/1    00:00:00 ps
+ 1591 ?        00:00:00 apache2
+ 1954 ?        00:00:00 upowerd
+ 2273 ?        00:00:00 colord
+ 2447 ?        00:00:00 gdm-session-wor
+ 2452 ?        00:00:00 systemd
+ 2453 ?        00:00:00 (sd-pam)
+ 2469 ?        00:00:00 gnome-keyring-d
+ 2473 tty2     00:00:00 gdm-x-session
+ 2475 tty2     00:03:07 Xorg
+ 2483 ?        00:00:01 dbus-daemon
+ 2485 tty2     00:00:00 gnome-session-b
+ 2566 ?        00:00:00 ssh-agent
+ 2601 ?        00:00:08 ibus-daemon
+ 2629 ?        00:00:00 gvfsd
+ 2696 ?        00:00:00 gvfsd-fuse
+ 2701 ?        00:00:00 ibus-dconf
+ 2702 ?        00:00:00 ibus-ui-gtk3
+ 2705 ?        00:00:02 ibus-extension-
+ 2710 ?        00:00:00 ibus-x11
+ 2718 ?        00:00:00 ibus-portal
+ 2721 ?        00:00:00 at-spi-bus-laun
+ 2745 ?        00:00:00 dbus-daemon
+ 2753 ?        00:00:00 at-spi2-registr
+ 2803 ?        00:00:00 xdg-desktop-por
+ 2832 ?        00:00:00 xdg-document-po
+ 2838 ?        00:00:00 xdg-permission-
+ 2870 ?        00:00:00 xdg-desktop-por
+ 2932 ?        00:00:01 ibus-engine-sim
+ 2958 tty2     00:02:43 gnome-shell
+ 3047 ?        00:02:56 pulseaudio
+ 3147 ?        00:00:00 gnome-shell-cal
+ 3151 ?        00:00:00 evolution-sourc
+ 3159 ?        00:00:00 goa-daemon
+ 3160 ?        00:00:00 gvfs-udisks2-vo
+ 3166 ?        00:00:00 gvfs-mtp-volume
+ 3170 ?        00:00:00 gvfs-gphoto2-vo
+ 3174 ?        00:00:00 gvfs-goa-volume
+ 3183 ?        00:00:00 goa-identity-se
+ 3188 ?        00:00:00 gvfs-afc-volume
+ 3193 tty2     00:00:00 gsd-power
+ 3194 tty2     00:00:00 gsd-print-notif
+ 3196 tty2     00:00:00 gsd-rfkill
+ 3197 tty2     00:00:00 gsd-screensaver
+ 3202 tty2     00:00:00 gsd-sharing
+ 3203 tty2     00:00:00 gsd-sound
+ 3207 tty2     00:00:00 gsd-xsettings
+ 3208 tty2     00:00:00 gsd-wacom
+ 3213 tty2     00:00:00 gsd-smartcard
+ 3225 tty2     00:00:00 gsd-a11y-settin
+ 3226 tty2     00:00:00 gsd-clipboard
+ 3229 tty2     00:00:00 gsd-color
+ 3232 tty2     00:00:00 gsd-datetime
+ 3233 tty2     00:00:00 gsd-housekeepin
+ 3237 tty2     00:00:00 gsd-keyboard
+ 3243 tty2     00:00:00 gsd-media-keys
+ 3244 tty2     00:00:00 gsd-mouse
+ 3265 tty2     00:00:00 gsd-printer
+ 3288 tty2     00:00:03 zeitgeist-datah
+ 3289 tty2     00:00:00 blueman-applet
+ 3290 tty2     00:00:22 plank
+ 3291 tty2     00:00:00 gsd-disk-utilit
+ 3292 tty2     00:00:00 evolution-alarm
+ 3294 tty2     00:00:00 tracker-miner-a
+ 3295 tty2     00:00:05 tracker-miner-f
+ 3311 tty2     00:00:04 gnome-software
+ 3315 ?        00:00:02 tracker-store
+ 3345 ?        00:00:00 zeitgeist-daemo
+ 3353 ?        00:00:00 zeitgeist-fts
+ 3393 ?        00:00:06 dconf-service
+ 3401 ?        00:00:00 evolution-calen
+ 3406 ?        00:00:05 bamfdaemon
+ 3427 ?        00:00:00 evolution-addre
+ 3466 ?        00:00:00 obexd
+ 3512 ?        00:00:00 fwupd
+ 3928 ?        00:00:00 gvfsd-metadata
+ 4050 ?        00:00:48 nautilus
+ 4055 ?        00:00:00 gvfsd-trash
+ 4078 ?        00:00:00 gvfsd-burn
+ 4085 ?        00:00:00 gvfsd-network
+ 4121 ?        00:00:12 gnome-terminal-
+ 4129 pts/0    00:00:00 bash
+ 4131 ?        00:00:00 gvfsd-dnssd
+ 4145 pts/0    00:00:00 su
+ 4146 pts/0    00:00:00 bash
+ 4343 ?        00:00:00 seahorse
+ 4348 ?        00:00:00 epiphany-search
+ 4438 ?        00:00:00 mission-control
+ 4471 ?        00:00:00 telepathy-logge
+ 4530 ?        00:00:26 code
+ 4532 ?        00:00:00 code
+ 4533 ?        00:00:00 code
+ 4570 ?        00:00:00 code
+ 4571 ?        00:00:27 code
+ 4590 ?        00:01:51 code
+ 4621 ?        00:00:11 code
+ 4636 ?        00:00:07 code
+ 4655 ?        00:00:02 code
+ 4725 tty2     00:03:31 chrome
+ 4733 tty2     00:00:00 cat
+ 4734 tty2     00:00:00 cat
+ 4738 tty2     00:00:00 chrome
+ 4739 tty2     00:00:00 chrome-sandbox
+ 4740 tty2     00:00:00 chrome
+ 4742 tty2     00:00:00 chrome-sandbox
+ 4743 tty2     00:00:00 nacl_helper
+ 4745 tty2     00:00:00 chrome
+ 4765 tty2     00:04:13 chrome
+ 4771 tty2     00:01:32 chrome
+ 4792 tty2     00:00:03 chrome
+ 4870 tty2     00:00:37 chrome
+ 4894 tty2     00:00:00 chrome
+ 4908 tty2     00:00:47 chrome
+ 4921 tty2     00:00:00 chrome
+ 4934 tty2     00:00:00 chrome
+ 4947 tty2     00:00:00 chrome
+ 4960 tty2     00:00:03 chrome
+ 5102 tty2     00:00:33 chrome
+ 8948 tty2     00:01:04 chrome
+ 8992 tty2     00:00:00 chrome
+ 9012 tty2     00:00:13 chrome
+ 9026 tty2     00:00:00 chrome
+ 9074 tty2     00:00:14 chrome
+ 9106 ?        00:00:00 kworker/0:0-events
+ 9164 tty2     00:00:32 chrome
+ 9783 tty2     00:06:52 chrome
+ 9869 tty2     00:05:55 python3
+12170 ?        00:00:00 kworker/u16:0-i915
+13151 ?        00:00:00 kworker/u16:2-events_unbound
+14744 tty2     00:01:55 chrome
+17295 tty2     00:00:44 chrome
+17399 ?        00:00:00 kworker/u16:3-events_unbound
+25192 ?        00:00:00 kworker/0:2-events_power_efficient
+25202 ?        00:00:00 kworker/3:1-xfs-cil/dm-1
+25210 ?        00:00:00 kworker/2:2-xfs-data/dm-1
+26277 ?        00:00:00 kworker/1:1-cgroup_destroy
+26539 tty2     00:00:00 chrome
+26612 ?        00:00:00 kworker/3:0-events
+26615 ?        00:00:00 kworker/2:0-events
+28634 pts/0    00:00:00 bash
+28835 pts/0    00:00:00 bash
+29043 pts/0    00:00:00 bash
+29252 tty2     00:00:02 gimp-2.10
+29280 tty2     00:00:01 script-fu
+29290 ?        00:00:00 kworker/3:2
+29292 pts/0    00:00:00 bash
+29493 ?        00:00:00 kworker/2:1
+29495 pts/0    00:00:00 ps

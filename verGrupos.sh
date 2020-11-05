@@ -19,7 +19,7 @@ echo  "----------------------VER GRUPOS------------------------------"
 echo -e  ""
 getent group {1000..60000}
 echo -e  ""
-read -p "Press enter para volver al menu" 
+read -p "Press enter para volver al menu principal" 
 
-./menu.sh
+./menuPpal.sh
 #FIN BASH

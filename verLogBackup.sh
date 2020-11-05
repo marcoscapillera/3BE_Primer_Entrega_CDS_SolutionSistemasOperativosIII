@@ -10,11 +10,16 @@
 
 #EJECUCION
 clear
-echo -e "----------------LOG MODIFICACIONES DE USUARIOS---------------------------"
+echo -e "----------------LOG Backup Realizados---------------------------"
 echo ""
 echo ""
 
 
-cat /var/log/modificacionUsuario.log && exit 1
+cat /var/log/backup_db.log && exit 1
+
+
+
+
+
 
 

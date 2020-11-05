@@ -6,7 +6,7 @@
 # Autor: Andrea Bazzini, Marcos Bueno, Ruben Gainza y Mathías Torterolo.
 
 
-dirLog="/var/log/backup_db.log"
+dirLog="/var/log/backup_dbcds.log"
 fecha=`date +%F`
 hora=`date +%H:%M`
 

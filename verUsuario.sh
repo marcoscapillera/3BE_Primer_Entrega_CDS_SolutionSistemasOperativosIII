@@ -18,8 +18,8 @@ echo  "----------------------VER USUARIO------------------------------"
 echo -e " Ingrese nombre del usuario : "
 read usuario 
 id $usuario
-read -p "Press enter para volver al menu" 
-./menu.sh
+read -p "Press enter para volver al menu principal" 
+./menuPpal.sh
 #FIN BASH
 
 

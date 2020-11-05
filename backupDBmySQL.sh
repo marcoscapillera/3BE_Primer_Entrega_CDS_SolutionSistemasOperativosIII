@@ -4,7 +4,7 @@
 user="root"
 password="admin"
 host="localhost"
-db_name="dbTriage"
+db_name="cds"
 
 # Especificar donde se va realizar el respaldo
 backup_path="/home/$USER"
