@@ -34,9 +34,7 @@ echo "El usuario no existe"
     
 fi
 
-read -p "Press enter para volver al menu" 
-
+read -p "Press enter para volver al menu principal"  
     
-    
-./menu.sh
+./menuPpal.sh
 #FIN BASH

@@ -120,7 +120,6 @@
 			*) echo -e "\t Opcion inválida!"
 
 			
-			./menu.sh
 
 	esac
 

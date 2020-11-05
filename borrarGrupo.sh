@@ -28,8 +28,8 @@ echo "El administrador $admin borro al grupo $grupo,  el $DIA a las $HORA">> his
 
 fi
 
-read -p "Press enter para volver al menu" 
+read -p "Press enter para volver al menu principal"  
     
     
-./menu.sh
+./menuPpal.sh
 #FIN BASH

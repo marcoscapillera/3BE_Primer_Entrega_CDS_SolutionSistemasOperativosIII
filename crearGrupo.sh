@@ -30,7 +30,7 @@ echo "El administrador $admin creo al grupo $grupo,  el $DIA a las $HORA">> hist
 
 fi
 
-read -p "Press enter para volver al menu" 
+read -p "Press enter para volver al menu principal"  
     
-./menu.sh
+./menuPpal.sh
 #FIN BASH

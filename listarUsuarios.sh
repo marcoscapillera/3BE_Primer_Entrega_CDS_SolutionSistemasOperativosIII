@@ -49,6 +49,6 @@ done < "listemp.txt" # Fin del while
 
 echo -e "--------------------"
 
-read -p "Press enter para volver al menu" 
+read -p "Press enter para volver al menu principal"  
 
-./menu.sh
+./menuPpal.sh

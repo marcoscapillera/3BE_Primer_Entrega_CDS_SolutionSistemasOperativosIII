@@ -44,7 +44,7 @@ fi
 
 sleep 3 
 
-read -p "Press enter para volver al menu" 
+read -p "Press enter para volver al menu principal"  
 
-./menu.sh
+./menuPpal.sh
 #FIN BASH

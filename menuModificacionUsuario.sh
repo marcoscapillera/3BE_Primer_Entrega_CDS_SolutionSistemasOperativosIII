@@ -93,12 +93,12 @@ sh logs.sh "Ver Usuario"
 6)
 sh logs.sh "Volver al menu principal"
 #Redirecciona al bash de modificar usuario
-./menu.sh;;
+./menuPpal.sh;;
 q|Q) exit;;
 
 *) echo -e "\t Opcion inválida!"
 
-./menu.sh
+
 
 esac
 

@@ -25,7 +25,7 @@ sh logsBackup.sh "- BUCKUP DB: El administrador $admin realizo buckup  de la bas
 sleep 3
 
 read -p "Press enter para volver al menu" 
-./menu.sh
+./menuPpal.sh
 
 
 #Crontab para realizar el buckup todos los dias a las 3:00 AM. 

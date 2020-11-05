@@ -81,14 +81,14 @@ sh logs.sh "Ver Grupos"
 4)
 sh logs.sh "Volver al menu principal"
 #Redirecciona al bash de modificar usuario
-./menu.sh
+./menuPpal.sh
 ;;
 
 q|Q) exit     ;;
 
 *) echo -e "\t Opcion inválida!"
 
-./menu.sh
+./menuPpal.sh
 
 esac
 

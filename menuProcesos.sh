@@ -54,19 +54,21 @@ echo ""
 echo "1. Listar los procesos"
 echo "2. Ver consumo de procesos"
 echo "3. Mostrar los 10 ultimos procesos"
-echo "3. Detener un proceso"
+echo "4. Detener un proceso"
+echo "5. Volver al menu Principal"
+
 echo ""
 echo -n "Ingrese opcion: "; read op
 case $op in
 1) ps aux;
-read -p "Press enter para volver al menu" 
-./menuPpal.sh
+read -p "Press enter para volver al menu procesos" 
+./menuProcesos.sh
 
 ;;
 2) vmstat;
 
-read -p "Press enter para volver al menu" 
-./menuPpal.sh
+read -p "Press enter para volver al menu procesos" 
+./menuProcesos.sh
 
 ;;
 3) 
@@ -74,8 +76,8 @@ ps -e > tempProcesos.txt;
  tail -10 tempProcesos.txt;
 
 
-read -p "Press enter para volver al menu" 
-./menuPpal.sh
+read -p "Press enter para volver al menu procesos" 
+./menuProcesos.sh
  
  ;;
 
@@ -86,10 +88,15 @@ echo "Dando de baja el proceso $procesos"
 sleep 3
 kill $procesos
 
-read -p "Press enter para volver al menu" 
-./menuPpal.sh
+read -p "Press enter para volver al menu procesos" 
+./menuProcesos.sh
  
  ;;
+
+ 5)
+"Volver al menu principal"
+./menuPpal.sh
+;;
 esac
 
 

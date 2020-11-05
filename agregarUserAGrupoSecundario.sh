@@ -34,8 +34,8 @@ echo "El administrador $admin agrego  a $user al Grupo secundario $grupo,  el $D
 fi
 fi
 
-read -p "Press enter para volver al menu" 
+read -p "Press enter para volver al menu principal" 
     
     
-./menu.sh
+./menuPpal.sh
 #FIN BASH

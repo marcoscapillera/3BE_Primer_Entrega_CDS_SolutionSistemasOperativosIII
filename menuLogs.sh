@@ -65,7 +65,7 @@ q|Q) exit
 ;;
 
 *) echo -e "\t Opcion inválida!"
-./menu.sh
+./menuPpal.sh
 esac
 
 

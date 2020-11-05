@@ -34,6 +34,6 @@ else
 echo "No existe usuario"
 fi
 
-read -p "Press enter para volver al menu" 
-./menu.sh
+read -p "Press enter para volver al menu principal" 
+./menuPpal.sh
 #FIN BASH
